@@ -1,0 +1,8 @@
+{
+  "name": "qrclass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "6fb1e6ae"
+}
