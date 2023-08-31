@@ -1,0 +1,54 @@
+/* Ajusta el valor de margin-top según tus necesidades */
+.login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-form {
+    margin-top: 200px; /* Ajusta este valor para mover los campos hacia abajo */
+    margin-bottom: 30px;
+    width: 80%; /* Ajusta el ancho del formulario */
+    max-width: 400px; /* Establece un ancho máximo para el formulario */
+  }
+  
+  /* Estilo para los campos de ingresar usuario y contraseña */
+  ion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-bottom: 20px;
+  }
+  
+  ion-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  ion-input {
+    border: 2px solid #ccc;
+    border-radius: 50px; /* Aumenta el valor para bordes más redondeados */
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .login-button,
+  .forgot-password-button {
+    margin-top: 10px;
+  }
+  
+  .message {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
