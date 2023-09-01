@@ -20,11 +20,17 @@ export class LoginPage {
     }
   }
 
-  login() {
-    // Validar el inicio de sesión
-    const user = this.registeredUsers.find(user => user.username === this.username && user.password === this.password);
+  goToForgotPassword() {
+    this.router.navigate(['/forgot-password']);
+  }
 
-    if (user) {
+  login() {
+      console.log('Intentando iniciar sesión con nombre de usuario:', this.username);
+      console.log('Contraseña proporcionada:', this.password);
+    // Buscar al usuario por su nombre de usuario (insensible a mayúsculas y minúsculas)
+    const user = this.registeredUsers.find(user => user.username.toLowerCase() === this.username.toLowerCase());
+  
+    if (user && user.password === this.password) {
       // Inicio de sesión exitoso, redirigir a la página de inicio
       this.message = 'Acceso correcto';
       this.router.navigate(['/inicio', { username: this.username }]);
@@ -33,4 +39,6 @@ export class LoginPage {
       this.message = 'Acceso incorrecto';
     }
   }
+  
+  
 }
